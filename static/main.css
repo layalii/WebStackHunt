@@ -1,12 +1,12 @@
 html,
 body,
-#___gatsby {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-
+#___gatsby,
 #gatsby-focus-wrapper {
   width: 100%;
   height: 100%;
+  font-family: CircularStd;
+}
+
+#__gatsby {
+  display: flex;
 }

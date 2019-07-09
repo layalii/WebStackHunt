@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="280px" height="35px" viewBox="0 0 280 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>logo-horizontal</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="40.5482042%" x2="100%" y2="72.8658063%" id="linearGradient-1">
+            <stop stop-color="#5F37FC" offset="0%"></stop>
+            <stop stop-color="#B82BEA" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="46.5973535%" x2="100%" y2="58.2316903%" id="linearGradient-2">
+            <stop stop-color="#5F37FC" offset="0%"></stop>
+            <stop stop-color="#B82BEA" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="49.1751536%" x2="100%" y2="50.8248464%" id="linearGradient-3">
+            <stop stop-color="#5F37FC" offset="0%"></stop>
+            <stop stop-color="#902BEA" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Details" transform="translate(-150.000000, -65.000000)">
+            <g id="Navbar">
+                <g id="logo-horizontal" transform="translate(150.000000, 65.000000)">
+                    <g id="logo">
+                        <g id="icon" fill-rule="nonzero">
+                            <path d="M0.744934365,11.1065987 L22.5186071,20.4012746 C22.6722338,20.4681482 22.8363042,20.5 23.0006772,20.5 C23.1650502,20.5 23.3283637,20.4664877 23.4827472,20.4012746 L45.2559659,11.1065987 C45.7156352,10.9099027 46.0101747,10.4558264 45.9997311,9.95706711 C45.9894388,9.45800587 45.6764339,9.01615703 45.2094995,8.83953826 L23.4356754,0.580270966 C23.1543039,0.473243011 22.8446288,0.473243011 22.564014,0.580270966 L0.790946701,8.83938731 C0.324012311,9.01600608 0.0111587021,9.45876065 0.000261043776,9.95691615 C-0.0100311891,10.4549207 0.284811012,10.9106575 0.744934365,11.1065987 Z M22.9999204,3.03119604 L41.5006631,10.0488485 L22.9999204,17.9468776 L4.49887496,10.0489994 L22.9999204,3.03119604 Z" id="Shape" fill="url(#linearGradient-1)"></path>
+                            <path d="M0.744860901,17.877535 L23.0005127,27.5 L45.2557103,17.877535 C45.8790145,17.6082992 46.1672057,16.881011 45.9006591,16.2521826 C45.6348694,15.6248831 44.9165106,15.3298093 44.2915415,15.6007268 L23.0005127,24.8064192 L1.70872707,15.6008797 C1.08572563,15.3314911 0.365701862,15.6241187 0.0991553277,16.2523355 C-0.167391207,16.8811639 0.122010823,17.6082992 0.744860901,17.877535 Z" id="Path" fill="url(#linearGradient-2)"></path>
+                            <path d="M0.744860901,24.8771744 L23.0005127,34.5 L45.2557103,24.8771744 C45.8790145,24.6077756 46.1672057,23.8804602 45.9006591,23.2516083 C45.6348694,22.6242853 44.9165106,22.3310351 44.2915415,22.6001281 L23.0005127,31.8061654 L1.70872707,22.6001281 C1.08572563,22.3308822 0.365701862,22.6235208 0.0991553277,23.2516083 C-0.167391207,23.8804602 0.122010823,24.6077756 0.744860901,24.8771744 Z" id="Path" fill="url(#linearGradient-2)"></path>
+                        </g>
+                        <text id="web-stack-hunt" fill="url(#linearGradient-3)" font-family=".SFNSDisplay, .SF NS Display" font-size="35" font-weight="normal" line-spacing="28" letter-spacing="-2.1875">
+                            <tspan x="62" y="34">web stack hunt</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
