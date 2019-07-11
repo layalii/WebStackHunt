@@ -5,6 +5,7 @@ import { Form } from "../components/Form"
 import { colors } from "../utilities"
 import { Link } from "gatsby"
 import CategoryCard from "../components/CategoryCard"
+import SEO from "../components/SEO"
 
 const Layout = styled.div`
   width: 100%;
@@ -55,6 +56,7 @@ const Title = styled.h1`
 
 export default () => (
   <Layout>
+    <SEO />
     <Header>
       <HorizontalLogo />
       <Form />

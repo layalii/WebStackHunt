@@ -8,8 +8,6 @@ const _CategoryCard = styled.div`
   border: 1px solid #f6f9fc;
   box-shadow: 0 5px 13px -10px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
-  // background: white;
-  // box-shadow: 0px 5px 17px -6px rgba(0, 0, 0, 0.03);
   h2 {
     color: ${colors["gray-500"]};
     padding-left: 20px;

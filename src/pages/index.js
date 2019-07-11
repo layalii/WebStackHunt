@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { VerticalLogo } from "../components/Logo"
 import { colors } from "../utilities"
 import { Form } from "../components/Form"
+import SEO from "../components/SEO"
 
 const Layout = styled.div`
   width: 100%;
@@ -21,6 +22,7 @@ const TagLine = styled.p`
 
 export default () => (
   <Layout>
+    <SEO />
     <VerticalLogo />
     <TagLine>Hunt the technologies behind a website</TagLine>
     <Form />
