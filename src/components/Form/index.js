@@ -1,7 +1,7 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import { colors } from "../../utilities"
-import { Link } from "gatsby"
+import { Link, navigate } from "gatsby"
 
 const _Form = styled.form`
   display: flex;
@@ -31,20 +31,37 @@ const Button = styled.button`
   }
 `
 
-const StyledLink = styled(props => <Link {...props} to="/detail" />)`
+const StyledLink = styled(props => (
+  <Link
+    {...props}
+    to={{
+      pathname: "/",
+      search: "?url=https://producthunt.com",
+    }}
+  />
+))`
   text-decoration: none;
   color: white;
 `
 
-export const Form = () => (
-  <_Form
-    onSubmit={e => {
-      e.preventDefault()
-    }}
-  >
-    <Input placeholder="https://producthunt.com" />
-    <Button>
-      <StyledLink to="/detail">HUNT</StyledLink>
-    </Button>
-  </_Form>
-)
+export const Form = () => {
+  const [url, setUrl] = useState("")
+  return (
+    <_Form
+      onSubmit={e => {
+        e.preventDefault()
+        if (!url) return
+        navigate(`/?url=${url}`)
+      }}
+    >
+      <Input
+        placeholder="tap here your url"
+        value={url}
+        onChange={e => {
+          setUrl(e.target.value)
+        }}
+      />
+      <Button type="submit">HUNT</Button>
+    </_Form>
+  )
+}

@@ -50,7 +50,7 @@ const CategoryCard = ({ categoryName, apps }) => (
     <h2>{categoryName}</h2>
     <div className="appsContainer">
       {apps.map(app => (
-        <AppItem app={app} key={app.id} />
+        <AppItem key={app.id} app={app} />
       ))}
     </div>
   </_CategoryCard>
@@ -82,7 +82,7 @@ CategoryCard.defaultProps = {
 
 export default CategoryCard
 
-const AppItem = ({ app, key }) => (
+const AppItem = ({ app }) => (
   <_AppItem>
     <div>
       <TechLogo />

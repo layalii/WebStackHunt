@@ -15,14 +15,14 @@ const _VerticalLogo = styled.h1`
 const _HorizontalLogo = styled(props => <Link {...props} to="/" />)`
   height: 35px;
   width: 291px;
-  display: inline-block;
+  display: flex;
   background: transparent url(${HorizontalLogoImg}) 291px 35px;
 `
 
 const _TechLogo = styled.div`
   height: 20px;
   width: 20px;
-  margin-right:10px;
+  margin-right: 10px;
   background: transparent url(${TechLogoImg}) 20px 20px;
 `
 
