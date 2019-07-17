@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import { TechLogo } from "../Logo"
 import { colors } from "../../utilities"
 
 const _CategoryCard = styled.div`
@@ -45,6 +44,14 @@ const _AppItem = styled.div`
   }
 `
 
+const _TechLogo = styled.div`
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  background: transparent url(${props => props.icon}) 20px 20px;
+  background-size: contain;
+`
+
 const CategoryCard = ({ categoryName, apps }) => (
   <_CategoryCard>
     <h2>{categoryName}</h2>
@@ -62,20 +69,10 @@ CategoryCard.defaultProps = {
     {
       id: 1,
       icon: "",
-      name: "CDN JS",
-      github: "github",
-      website: "website",
-      description:
-        "The best FOSS CDN for web related libraries to speed up your websites!",
-    },
-    {
-      id: 2,
-      icon: "",
-      name: "CDN JS",
-      github: "github",
-      website: "website",
-      description:
-        "The best FOSS CDN for web related libraries to speed up your websites!",
+      name: "",
+      github: "",
+      website: "",
+      description: "",
     },
   ],
 }
@@ -85,11 +82,10 @@ export default CategoryCard
 const AppItem = ({ app }) => (
   <_AppItem>
     <div>
-      <TechLogo />
+      <_TechLogo icon={`https://www.wappalyzer.com/images/icons/${app.icon}`} />
       <h3>{app.name}</h3>
       <p>
-        /<a href="https://google.com">{app.github}</a>-
-        <a href="https://google.com">{app.website}</a>
+        /<a href={app.github}>github</a>-<a href={app.website}>website</a>
       </p>
     </div>
     <p>{app.description}</p>
