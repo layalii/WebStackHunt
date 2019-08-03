@@ -11,7 +11,7 @@ import _ from "lodash"
 import uid from "uid"
 import Masonry from "react-masonry-component"
 
-const Layout = styled.div`
+const LayoutDetails = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
@@ -171,7 +171,7 @@ export default ({ url }) => {
 
   if (isLoading) {
     return (
-      <Layout>
+      <LayoutDetails>
         <SEO />
         <Header>
           <div className="row">
@@ -186,13 +186,13 @@ export default ({ url }) => {
         <Body>
           <Error>Loading ..</Error>
         </Body>
-      </Layout>
+      </LayoutDetails>
     )
   }
 
   if (error) {
     return (
-      <Layout>
+      <LayoutDetails>
         <SEO />
         <Header>
           <div className="row">
@@ -207,12 +207,12 @@ export default ({ url }) => {
         <Body>
           <Error>{error}</Error>
         </Body>
-      </Layout>
+      </LayoutDetails>
     )
   }
 
   return (
-    <Layout>
+    <LayoutDetails>
       <SEO />
       <Header>
         <div className="row">
@@ -242,6 +242,6 @@ export default ({ url }) => {
           </Masonry>
         </div>
       </Body>
-    </Layout>
+    </LayoutDetails>
   )
 }
