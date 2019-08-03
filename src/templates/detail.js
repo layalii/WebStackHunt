@@ -17,12 +17,23 @@ const Layout = styled.div`
   display: flex;
   flex-direction: column;
 `
+
+const Error = styled.p`
+  color: #8a2dec;
+  font-size: 20px;
+  align-self: center;
+  margin-top: 100px;
+`
+
 const Body = styled.div`
   height: 100%;
   display: flex;
   padding: 20px 30px;
   flex-direction: column;
+  ${"" /* align-items: center;
+  justify-content: center; */}
 `
+
 const BreadCrumb = styled.div`
   width: 100%;
   display: flex;
@@ -141,7 +152,7 @@ export default ({ url }) => {
 
   useEffect(() => {
     axios
-      .post("http://localhost:4000/api", {
+      .post("https://webstack-hunt-api.herokuapp.com/api", {
         url,
       })
       .then(response => {
@@ -155,6 +166,7 @@ export default ({ url }) => {
         }
       })
       .catch(error => {
+        setIsLoading(false)
         setError("Something went wrong!")
       })
   }, [])
@@ -174,7 +186,7 @@ export default ({ url }) => {
           </div>
         </Header>
         <Body>
-          <p>Loading ..</p>
+          <Error>Loading ..</Error>
         </Body>
       </Layout>
     )
@@ -195,7 +207,7 @@ export default ({ url }) => {
           </div>
         </Header>
         <Body>
-          <p>{error}</p>
+          <Error>{error}</Error>
         </Body>
       </Layout>
     )
