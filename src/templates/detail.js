@@ -30,8 +30,6 @@ const Body = styled.div`
   display: flex;
   padding: 20px 30px;
   flex-direction: column;
-  ${"" /* align-items: center;
-  justify-content: center; */}
 `
 
 const BreadCrumb = styled.div`
