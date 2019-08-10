@@ -51,7 +51,7 @@ export const Form = () => {
       onSubmit={e => {
         e.preventDefault()
         if (!url) return
-        navigate(`/?url=${url}`)
+        navigate(`/hunt?url=${url}`)
       }}
     >
       <Input

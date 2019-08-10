@@ -10,6 +10,7 @@ import SEO from "../components/SEO"
 import _ from "lodash"
 import uid from "uid"
 import Masonry from "react-masonry-component"
+import queryString from "query-string"
 
 const LayoutDetails = styled.div`
   width: 100%;
@@ -143,7 +144,9 @@ const transformServerData = data => {
   //return data
 }
 
-export default ({ url }) => {
+export default ({ location }) => {
+  const searchObject = queryString.parse(location.search)
+  const { url } = searchObject
   const [data, setData] = useState([])
   const [error, setError] = useState(null)
   const [isLoading, setIsLoading] = useState(true)

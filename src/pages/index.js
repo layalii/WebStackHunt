@@ -1,12 +1,9 @@
 import React from "react"
 import styled from "styled-components"
-import queryString from "query-string"
 import { VerticalLogo } from "../components/Logo"
 import { colors } from "../utilities"
 import { Form } from "../components/Form"
 import SEO from "../components/SEO"
-
-import DetailsPage from "../templates/detail"
 
 const Layout = styled.div`
   width: 100%;
@@ -23,16 +20,7 @@ const TagLine = styled.p`
   font-size: 24px;
 `
 
-export default ({ location }) => {
-  if (location.search) {
-    const searchObject = queryString.parse(location.search)
-    const { url } = searchObject
-    return <DetailsPage url={url} />
-  }
-  return <HomePage />
-}
-
-const HomePage = () => (
+export default () => (
   <Layout>
     <SEO />
     <VerticalLogo />
